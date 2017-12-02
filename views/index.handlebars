@@ -1,0 +1,32 @@
+
+<div class="container">
+    <div class="jumbotron">
+        <h1>Chris' ESPN Mongoose Scraping Homework</h1>
+        <p>This is a webscrapping app that uses cherio to scrape a website and display articles, save, and write notes.</p>
+    </div>
+        <h1>Here are the articles that have been scraped!</h1>
+<div class="progress">
+  <div class="progress-bar progress-bar-success" style="width: 35%"></div>
+  <div class="progress-bar progress-bar-warning" style="width: 20%"></div>
+  <div class="progress-bar progress-bar-danger" style="width: 10%"></div>
+</div>
+
+    {{#each article}}
+	<div class="panel panel-primary">
+            <div class="panel-heading">
+                <a target="_blank" href="{{this.link}}" class="title">{{this.title}}</a>
+                <a href="/save/{{this._id}}" id="saveButton"><button type="button" class="btn-sm btn-success">SAVE</button></a>
+            </div>
+            <div class="panel-body">
+                    <p>{{this.about}}</p>
+                    <a target="_blank" href="{{this.link}}">{{this.link}}</a>
+            </div>
+	</div>
+    {{/each}}
+            <h1>Maybe it's time to scrape more articles...</h1>
+<div class="progress">
+  <div class="progress-bar progress-bar-success" style="width: 35%"></div>
+  <div class="progress-bar progress-bar-warning" style="width: 20%"></div>
+  <div class="progress-bar progress-bar-danger" style="width: 10%"></div>
+</div>
+</div>

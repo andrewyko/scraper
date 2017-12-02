@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+	 crossorigin="anonymous">
+
+	<!--Import Google Icon Font-->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!--Import materialize.css-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
+
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+	 crossorigin="anonymous"></script>
+
+	<!-- Our Stylesheet -->
+	<link rel="stylesheet" href="/assets/css/style.css" type="text/css" />
+	<title>Mongo Scraper</title>
+
+	<!--Let browser know website is optimized for mobile-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<!-- Compiled and minified JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+
+</head>
+<body>
+	<script type="text/javascript">
+    	$(document).ready(function () {
+        	$(".button-collapse").sideNav();
+    	})
+	</script>
+	<nav class="z-depth-4">
+		<div class="nav-wrapper">
+			<a href="/" class="brand-logo">Mongo Scraper</a>
+			<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+			<ul class="right hide-on-med-and-down">
+				<li><a href="/">Home</a></li>
+				<li><a href="/saved">Saved Articles</a></li>
+                <li><a href="/scrape" id="navbutton"><button  type="button" class="btn-danger btn-sm">SCRAPE NEW ARTICLES!</button></a></li>
+			</ul>
+			<ul class="side-nav" id="mobile-demo">
+				<li><a href="/">Home</a></li>
+				<li><a href="/saved">Saved Articles</a></li>
+                <li><a href="/scrape" id="navbutton"><button  type="button" class="btn-danger btn-sm">SCRAPE NEW ARTICLES!</button></a></li>
+			</ul>
+		</div>
+	</nav>
+
+
+<script type="text/javascript" src="server.js"></script>
+</body>
+</html>

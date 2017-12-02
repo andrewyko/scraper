@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Slabo+27px');
+
+nav, .nav-wrapper {
+    background-color: #da1305;
+}
+
+#ars {
+    background-color: #FF4E00;
+    color: #ffffff;
+    border-radius: 150px;
+    padding: 5px 5px 12px 5px;
+}
+
+a:hover {
+    text-decoration: none !important;
+    color: #400601;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    border-bottom: 3px solid #F44336;
+    box-shadow: 3px 3px 9px;
+    padding: 3px;
+}
+
+h4, h5 {
+    border-bottom: 1.5px solid #F44336;
+    /* box-shadow: 2px 2px 6px #000; */
+    padding: 3px;
+    font-family: 'Slabo 27px', serif;
+    color: #000000;
+}
+
+p {
+    color: #514A4A !important;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.panel-primary>.panel-heading {
+    background-color: rgb(243, 50, 37);
+    padding: 3px !important;
+    border-color: #449D44;
+    border-radius: 0px;
+}
+
+a.title {
+    color: #fff;
+    font-family: 'Slabo 27px', serif;
+    font-size: 18px;
+    font-weight: 550;
+}
+
+a.title:hover {
+    color: #400601;
+}
+
+.btn-success {
+    margin-top: -3px;
+    float: right;
+}
+
+.modal {
+    background: none;
+}
+
+
+    .panel-primary {
+        margin: 5px 0px;
+        position: relative;
+        /* border-color: #c3c4e2; */
+        border-radius: 0px;
+        box-shadow: 1px 1px 20px 2px;
+        margin-bottom: 25px;
+    }
+
+.panel-body {
+    padding: 3px !important;
+}
+
+#noteModal {
+    box-shadow: none !important;
+}
+a.brand-logo {
+    margin-left: 40px;
+}
+body {
+    background-color: #d8d8d8;
+    font-family: Roboto;
+}
+.panel.panel-primary {
+    font-family: Roboto;
+    border-radius: 5px;
+}
+a.title {
+    font-family: Roboto;
+}
+.panel-body {
+    font-family: Roboto;
+}
+p {
+    font-family: Roboto;
+}
+button.btn-sm.btn-success {
+    font-style: italic;
+}
+.progress {
+    position: relative;
+    height: 13px;
+    display: block;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 11px;
+    margin: .5rem 0 1rem 0;
+    overflow: hidden;
+}
+.jumbotron {
+    margin-top: 15px;
+}
+@media (max-width: 767px) {
+    a.brand-logo {
+        margin-left: 0px;
+        font-size: 12pt;
+    }
+    h1 {
+        font-size: 20px;
+    }
+}
+
+

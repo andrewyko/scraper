@@ -1,0 +1,38 @@
+<div class="container">
+	    <div class="jumbotron">
+            <h1>Saved Articles</h1>
+            <p>Here is a list of your saved articles. If you haven't saved one yet go for it! It will appear here.</p>
+        </div>
+
+    
+            {{#each article}}
+                <!--if there are saved articles it will show below-->
+                {{#if this.saved}}
+                <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <a target="_blank" href="{{this.link}}" class="title">{{this.title}}</a>
+                    <br>
+                    <!--DELETE button-->
+                    <a href="/delete/{{this._id}}"><button type="button" class="btn-danger btn-sm">DELETE</button></a>
+                    <!--ADD NOTES button with a data-value of the news articles id-->
+                    <button type="button" class="btn-sm btn-info addnotes" data-toggle="modal" data-value="{{this._id}}" data-target="#noteModal">ADD NOTES</button>
+                </div>
+                <div class="panel-body">
+                    {{this.about}}
+                </div>
+                </div>
+                {{/if}}
+
+            {{/each}}
+
+
+<!-- Modal -->
+            <div id="noteModal" class="modal fade"  tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div id="notes"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>

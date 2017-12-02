@@ -1,0 +1,30 @@
+{
+  "name": "arstechnica-webscraper1.0",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JohnBendfeldt/arstechnica-webscraper1.0.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JohnBendfeldt/arstechnica-webscraper1.0/issues"
+  },
+  "homepage": "https://github.com/JohnBendfeldt/arstechnica-webscraper1.0#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "cheerio": "^1.0.0-rc.2",
+    "express": "^4.15.4",
+    "express-handlebars": "^3.0.0",
+    "mongojs": "^2.4.1",
+    "mongoose": "^4.11.8",
+    "morgan": "^1.8.2",
+    "request": "^2.81.0"
+  }
+}
